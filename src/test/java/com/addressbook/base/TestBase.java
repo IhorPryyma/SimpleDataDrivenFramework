@@ -2,6 +2,7 @@ package com.addressbook.base;
 
 import com.addressbook.utilites.ExcelReader;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -36,6 +37,7 @@ public class TestBase {
     public static Properties config = new Properties();
     public static Properties objectrepo = new Properties();
     private static FileInputStream fis;
+    public static Logger log = Logger.getLogger("devpinoyLogger");
 
     public static String browser = "";
     public static WebDriverWait wait;
@@ -47,7 +49,7 @@ public class TestBase {
     public void setUp(){
 
         if(driver == null){
-
+            log.debug("Initialize webdriver started");
             try {
                 fis = new FileInputStream(PROJDIR + CONFIGFILE_PATH);
             } catch (FileNotFoundException e) {
@@ -76,6 +78,7 @@ public class TestBase {
             }
 
             config.setProperty("browser", browser);
+            log.debug("Setting browser : " + browser);
 
             if(browser.equalsIgnoreCase("chrome")){
                 WebDriverManager.chromedriver().setup();
@@ -96,6 +99,8 @@ public class TestBase {
                 driver = new SafariDriver();
             }
 
+            log.debug("Trying to open : " +  config.getProperty("testurl") + " application");
+
             driver.get(config.getProperty("testurl"));
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")), TimeUnit.SECONDS);
@@ -108,9 +113,9 @@ public class TestBase {
     private WebElement findElementByLocator(String locator){
         WebElement element = null;
 
+        log.debug("Trying to find : " + locator);
         if(locator.endsWith("_CSS")){
             element = driver.findElement(By.cssSelector(objectrepo.getProperty(locator)));
-            System.out.print("locator" + element.toString());
         } else if(locator.endsWith("_XPATH")){
             element = driver.findElement(By.xpath(objectrepo.getProperty(locator)));
         } else if(locator.endsWith("_ID")){
@@ -122,12 +127,16 @@ public class TestBase {
         } else if(locator.endsWith("_LINK")){
             element = driver.findElement(By.linkText(objectrepo.getProperty(locator)));
         }
+
+        log.debug("Element found : " + element);
         return element;
     }
 
 
     public void click(String locator){
         WebElement element = findElementByLocator(locator);
+
+        log.debug("Trying to click on : " + locator);
 
         element.click();
     }
@@ -136,6 +145,8 @@ public class TestBase {
     public void type(String locator, String value){
         WebElement element = findElementByLocator(locator);
 
+        log.debug("Trying to set value :" + value + " for element : " + locator);
+
         element.sendKeys(value);
     }
 
@@ -143,8 +154,10 @@ public class TestBase {
     public boolean isElementPresent(String locator){
         try{
             findElementByLocator(locator);
+            log.debug("Element : " + locator + " successfully found");
             return true;
         } catch (NoSuchElementException exc){
+            log.error("Element : " + locator + " not found");
             exc.printStackTrace();
         }
         return false;
@@ -154,6 +167,8 @@ public class TestBase {
     public void select(String locator, String value){
         WebElement dropdown = findElementByLocator(locator);
 
+        log.debug("Setting value : " + value + " in dropdown menu : " + locator);
+
         Select select = new Select(dropdown);
         select.selectByVisibleText(value);
     }
@@ -162,13 +177,17 @@ public class TestBase {
     public void verifyEquality(String expected, String actual){
         try{
             Assert.assertEquals(expected, actual);
+
+            log.debug("Elements are equal :" + expected + " : " + actual);
         } catch (Throwable t){
+            log.error("Elements are not equal :" + expected + " : " + actual);
             t.printStackTrace();
         }
     }
 
 
     public String getPageTitle(){
+        log.debug("Page Title : " + driver.getTitle());
         return driver.getTitle();
     }
 

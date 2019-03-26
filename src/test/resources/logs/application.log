@@ -1,0 +1,25 @@
+26/03/2019 12:05:27 devpinoyLogger Initialize webdriver started
+26/03/2019 12:05:27 devpinoyLogger Setting browser : chrome
+26/03/2019 12:05:29 devpinoyLogger Trying to open : http://a.testaddressbook.com/ application
+26/03/2019 12:05:32 devpinoyLogger Starting test execution : loginTest
+26/03/2019 12:05:32 devpinoyLogger Page Title : Address Book
+26/03/2019 12:05:32 devpinoyLogger Trying to find : loginBtn_XPATH
+26/03/2019 12:05:32 devpinoyLogger Element found : [[ChromeDriver: chrome on MAC (d23e6d56c2938193d74c141a19c04812)] -> xpath: //a[@id='sign-in']]
+26/03/2019 12:05:32 devpinoyLogger Trying to click on : loginBtn_XPATH
+26/03/2019 12:05:32 devpinoyLogger Trying to find : signupBtn_CSS
+26/03/2019 12:05:32 devpinoyLogger Element found : [[ChromeDriver: chrome on MAC (d23e6d56c2938193d74c141a19c04812)] -> css selector: a[data-test='sign-up']]
+26/03/2019 12:05:32 devpinoyLogger Element : signupBtn_CSS successfully found
+26/03/2019 12:05:32 devpinoyLogger Trying to find : emailField_XPATH
+26/03/2019 12:05:32 devpinoyLogger Element found : [[ChromeDriver: chrome on MAC (d23e6d56c2938193d74c141a19c04812)] -> xpath: //input[@id='session_email']]
+26/03/2019 12:05:32 devpinoyLogger Trying to set value :test404@test.com for element : emailField_XPATH
+26/03/2019 12:05:32 devpinoyLogger Trying to find : passwordField_XPATH
+26/03/2019 12:05:32 devpinoyLogger Element found : [[ChromeDriver: chrome on MAC (d23e6d56c2938193d74c141a19c04812)] -> xpath: //input[@placeholder='Password']]
+26/03/2019 12:05:32 devpinoyLogger Trying to set value :test123 for element : passwordField_XPATH
+26/03/2019 12:05:32 devpinoyLogger Trying to find : signinBtn_XPATH
+26/03/2019 12:05:32 devpinoyLogger Element found : [[ChromeDriver: chrome on MAC (d23e6d56c2938193d74c141a19c04812)] -> xpath: //input[@value='Sign in']]
+26/03/2019 12:05:32 devpinoyLogger Trying to click on : signinBtn_XPATH
+26/03/2019 12:05:33 devpinoyLogger Trying to find : addresses_XPATH
+26/03/2019 12:05:33 devpinoyLogger Element found : [[ChromeDriver: chrome on MAC (d23e6d56c2938193d74c141a19c04812)] -> xpath: //a[contains(text(),'Addresses')]]
+26/03/2019 12:05:33 devpinoyLogger Element : addresses_XPATH successfully found
+26/03/2019 12:05:33 devpinoyLogger Page Title : Address Book
+26/03/2019 12:05:33 devpinoyLogger Finishing test execution : loginTest

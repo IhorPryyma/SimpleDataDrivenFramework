@@ -1,0 +1,29 @@
+12:05:27,726 DEBUG devpinoyLogger:52 - Initialize webdriver started
+12:05:27,732 DEBUG devpinoyLogger:81 - Setting browser : chrome
+12:05:28,154 DEBUG Preferences:118 - Preference found chrome73=2.46 (valid until 2019-03-26 13:04:07)
+12:05:28,154  INFO WebDriverManager:546 - Using chromedriver 2.46 (since Google Chrome 73 is installed in your machine)
+12:05:28,166 DEBUG WebDriverManager:502 - Driver chromedriver 2.46 found in cache
+12:05:28,167  INFO WebDriverManager:1035 - Exporting webdriver.chrome.driver as /Users/user/.m2/repository/webdriver/chromedriver/mac64/2.46/chromedriver
+12:05:29,924 DEBUG devpinoyLogger:102 - Trying to open : http://a.testaddressbook.com/ application
+12:05:32,435 DEBUG devpinoyLogger:17 - Starting test execution : loginTest
+12:05:32,442 DEBUG devpinoyLogger:190 - Page Title : Address Book
+12:05:32,448 DEBUG devpinoyLogger:116 - Trying to find : loginBtn_XPATH
+12:05:32,465 DEBUG devpinoyLogger:131 - Element found : [[ChromeDriver: chrome on MAC (d23e6d56c2938193d74c141a19c04812)] -> xpath: //a[@id='sign-in']]
+12:05:32,465 DEBUG devpinoyLogger:139 - Trying to click on : loginBtn_XPATH
+12:05:32,515 DEBUG devpinoyLogger:116 - Trying to find : signupBtn_CSS
+12:05:32,694 DEBUG devpinoyLogger:131 - Element found : [[ChromeDriver: chrome on MAC (d23e6d56c2938193d74c141a19c04812)] -> css selector: a[data-test='sign-up']]
+12:05:32,694 DEBUG devpinoyLogger:157 - Element : signupBtn_CSS successfully found
+12:05:32,695 DEBUG devpinoyLogger:116 - Trying to find : emailField_XPATH
+12:05:32,708 DEBUG devpinoyLogger:131 - Element found : [[ChromeDriver: chrome on MAC (d23e6d56c2938193d74c141a19c04812)] -> xpath: //input[@id='session_email']]
+12:05:32,708 DEBUG devpinoyLogger:148 - Trying to set value :test404@test.com for element : emailField_XPATH
+12:05:32,821 DEBUG devpinoyLogger:116 - Trying to find : passwordField_XPATH
+12:05:32,833 DEBUG devpinoyLogger:131 - Element found : [[ChromeDriver: chrome on MAC (d23e6d56c2938193d74c141a19c04812)] -> xpath: //input[@placeholder='Password']]
+12:05:32,833 DEBUG devpinoyLogger:148 - Trying to set value :test123 for element : passwordField_XPATH
+12:05:32,878 DEBUG devpinoyLogger:116 - Trying to find : signinBtn_XPATH
+12:05:32,890 DEBUG devpinoyLogger:131 - Element found : [[ChromeDriver: chrome on MAC (d23e6d56c2938193d74c141a19c04812)] -> xpath: //input[@value='Sign in']]
+12:05:32,890 DEBUG devpinoyLogger:139 - Trying to click on : signinBtn_XPATH
+12:05:33,511 DEBUG devpinoyLogger:116 - Trying to find : addresses_XPATH
+12:05:33,524 DEBUG devpinoyLogger:131 - Element found : [[ChromeDriver: chrome on MAC (d23e6d56c2938193d74c141a19c04812)] -> xpath: //a[contains(text(),'Addresses')]]
+12:05:33,524 DEBUG devpinoyLogger:157 - Element : addresses_XPATH successfully found
+12:05:33,529 DEBUG devpinoyLogger:190 - Page Title : Address Book
+12:05:33,533 DEBUG devpinoyLogger:37 - Finishing test execution : loginTest
