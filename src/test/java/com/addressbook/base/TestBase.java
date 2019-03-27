@@ -3,10 +3,7 @@ package com.addressbook.base;
 import com.addressbook.utilites.ExcelReader;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -150,6 +147,13 @@ public class TestBase {
         element.sendKeys(value);
     }
 
+    public String getLabelText(String locator){
+        WebElement element = findElementByLocator(locator);
+
+        log.debug("Label text : " + element.getText());
+        return element.getText();
+    }
+
 
     public boolean isElementPresent(String locator){
         try{
@@ -174,21 +178,27 @@ public class TestBase {
     }
 
 
-    public void verifyEquality(String expected, String actual){
-        try{
-            Assert.assertEquals(expected, actual);
-
-            log.debug("Elements are equal :" + expected + " : " + actual);
-        } catch (Throwable t){
-            log.error("Elements are not equal :" + expected + " : " + actual);
-            t.printStackTrace();
-        }
-    }
-
 
     public String getPageTitle(){
         log.debug("Page Title : " + driver.getTitle());
         return driver.getTitle();
+    }
+
+
+    public void selectDateByJS(String locator, String dateValue) {
+        WebElement element = findElementByLocator(locator);
+
+        JavascriptExecutor js = (JavascriptExecutor)driver;
+        js.executeScript("arguments[0].setAttribute('value', '" + dateValue + "');" , element);
+    }
+
+
+    public void setAttribute(String locator, String attValue) {
+        WebElement element = findElementByLocator(locator);
+
+        JavascriptExecutor js = (JavascriptExecutor)driver;
+        js.executeScript("arguments[0].setAttribute(arguments[1], arguments[2]);",
+                element, "value", attValue);
     }
 
     @AfterSuite

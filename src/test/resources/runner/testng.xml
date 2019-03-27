@@ -8,5 +8,10 @@
             <class name="com.addressbook.testcases.LoginTest"/>
         </classes>
     </test>
+    <test thread-count="1" name="Add Address Test">
+        <classes>
+            <class name="com.addressbook.testcases.AddAddressTest"/>
+        </classes>
+    </test>
 
 </suite>
