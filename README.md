@@ -1,6 +1,6 @@
 # SimpleDataDrivenFramework
 
-Data Driven Automation Framework for testing: Address Book Web ApplicationTools:
+Data Driven Automation Framework for testing: Address Book Web Application.
 
 
 Tools:
