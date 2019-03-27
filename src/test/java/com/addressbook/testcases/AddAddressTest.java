@@ -2,6 +2,7 @@ package com.addressbook.testcases;
 
 import com.addressbook.base.TestBase;
 import com.addressbook.utilites.TestUtil;
+import org.testng.SkipException;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -12,6 +13,10 @@ public class AddAddressTest extends TestBase {
 
     @Test(dataProviderClass = TestUtil.class, dataProvider = "getdata")
     public void addAddressTest(Hashtable<String, String> data, Method m){
+
+        if(!data.get("runmode").equalsIgnoreCase("Y")) {
+            throw new SkipException("Skipping the test case as the Run Mode is NO");
+        }
 
         log.debug("Starting test execution : " + m.getName());
 

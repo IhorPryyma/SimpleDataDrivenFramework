@@ -1,9 +1,15 @@
 package com.addressbook.utilites;
 
 import com.addressbook.base.TestBase;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.annotations.DataProvider;
 
+import java.io.File;
+import java.io.IOException;
 import java.lang.reflect.Method;
+import java.util.Date;
 import java.util.Hashtable;
 
 public class TestUtil extends TestBase {
@@ -31,6 +37,49 @@ public class TestUtil extends TestBase {
         }
 
         return data;
+    }
+
+    // Checking is the test case should be run
+    public static boolean isTestRunnable(String testName, ExcelReader excel) {
+        String sheetName = "test_suite";
+        int rows = excel.getRowCount(sheetName);
+
+        for (int rNum = 2; rNum <= rows; rNum++) {
+
+            String testCase = excel.getCellData(sheetName, "TCID", rNum);
+
+            if(testCase.equalsIgnoreCase(testName)) {
+
+                String runmode = excel.getCellData(sheetName, "Runmode", rNum);
+                if(runmode.equalsIgnoreCase("Y")) {
+                    return true;
+                }else {
+                    return false;
+                }
+            }
+        }
+        return false;
+    }
+
+
+    // Screenshot capturing util
+    public static final String SCREENSHOT_PATH = "/target/surefire-reports/html/";
+    public static String screenshotName;
+
+    public static void captureScreenshot() {
+
+        File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+
+        Date d = new Date();
+        screenshotName = d.toString().replace(":", "_").replace(" ", "_") + ".jpg";
+
+
+        try {
+            FileUtils.copyFile(scrFile, new File(PROJDIR + SCREENSHOT_PATH + screenshotName));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
 

@@ -12,7 +12,6 @@ import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
@@ -40,6 +39,8 @@ public class TestBase {
     public static WebDriverWait wait;
 
     public static ExcelReader excel = new ExcelReader(PROJDIR + EXCELFILE_PATH);
+
+
 
 
     @BeforeSuite
@@ -96,7 +97,7 @@ public class TestBase {
                 driver = new SafariDriver();
             }
 
-            log.debug("Trying to open : " +  config.getProperty("testurl") + " application");
+            log.debug("Navigate to : " +  config.getProperty("testurl") + " application");
 
             driver.get(config.getProperty("testurl"));
             driver.manage().window().maximize();

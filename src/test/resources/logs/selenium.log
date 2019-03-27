@@ -1,288 +1,224 @@
-10:41:56,733 DEBUG devpinoyLogger:49 - Initialize webdriver started
-10:41:56,737 DEBUG devpinoyLogger:78 - Setting browser : chrome
-10:41:57,270 DEBUG Preferences:118 - Preference found chrome73=2.46 (valid until 2019-03-27 11:33:00)
-10:41:57,270  INFO WebDriverManager:546 - Using chromedriver 2.46 (since Google Chrome 73 is installed in your machine)
-10:41:57,280 DEBUG WebDriverManager:502 - Driver chromedriver 2.46 found in cache
-10:41:57,281  INFO WebDriverManager:1035 - Exporting webdriver.chrome.driver as /Users/user/.m2/repository/webdriver/chromedriver/mac64/2.46/chromedriver
-10:41:59,166 DEBUG devpinoyLogger:99 - Trying to open : http://a.testaddressbook.com/ application
-10:42:00,495 DEBUG devpinoyLogger:17 - Starting test execution : loginTest
-10:42:00,502 DEBUG devpinoyLogger:183 - Page Title : Address Book
-10:42:00,507 DEBUG devpinoyLogger:113 - Trying to find : loginBtn_XPATH
-10:42:00,524 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //a[@id='sign-in']]
-10:42:00,524 DEBUG devpinoyLogger:136 - Trying to click on : loginBtn_XPATH
-10:42:00,576 DEBUG devpinoyLogger:113 - Trying to find : signupBtn_CSS
-10:42:00,757 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> css selector: a[data-test='sign-up']]
-10:42:00,757 DEBUG devpinoyLogger:161 - Element : signupBtn_CSS successfully found
-10:42:00,758 DEBUG devpinoyLogger:113 - Trying to find : emailField_XPATH
-10:42:00,773 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='session_email']]
-10:42:00,773 DEBUG devpinoyLogger:145 - Trying to set value :test404@test.com for element : emailField_XPATH
-10:42:00,916 DEBUG devpinoyLogger:113 - Trying to find : passwordField_XPATH
-10:42:00,930 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@placeholder='Password']]
-10:42:00,930 DEBUG devpinoyLogger:145 - Trying to set value :test123 for element : passwordField_XPATH
-10:42:00,982 DEBUG devpinoyLogger:113 - Trying to find : signinBtn_XPATH
-10:42:00,996 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@value='Sign in']]
-10:42:00,996 DEBUG devpinoyLogger:136 - Trying to click on : signinBtn_XPATH
-10:42:01,432 DEBUG devpinoyLogger:113 - Trying to find : addresses_XPATH
-10:42:01,447 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //a[contains(text(),'Addresses')]]
-10:42:01,447 DEBUG devpinoyLogger:161 - Element : addresses_XPATH successfully found
-10:42:01,451 DEBUG devpinoyLogger:183 - Page Title : Address Book
-10:42:01,454 DEBUG devpinoyLogger:37 - Finishing test execution : loginTest
-10:42:01,464 DEBUG devpinoyLogger:16 - Starting test execution : addAddressTest
-10:42:01,464 DEBUG devpinoyLogger:113 - Trying to find : addresses_XPATH
-10:42:01,472 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //a[contains(text(),'Addresses')]]
-10:42:01,473 DEBUG devpinoyLogger:136 - Trying to click on : addresses_XPATH
-10:42:01,515 DEBUG devpinoyLogger:113 - Trying to find : addressesLabel_XPATH
-10:42:01,701 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //h2[contains(text(),'Addresses')]]
-10:42:01,701 DEBUG devpinoyLogger:161 - Element : addressesLabel_XPATH successfully found
-10:42:01,702 DEBUG devpinoyLogger:113 - Trying to find : addNewAddressLink_CSS
-10:42:01,714 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> css selector: a[data-test='create']]
-10:42:01,714 DEBUG devpinoyLogger:136 - Trying to click on : addNewAddressLink_CSS
-10:42:01,759 DEBUG devpinoyLogger:113 - Trying to find : addfirstname_XPATH
-10:42:01,960 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_first_name']]
-10:42:01,961 DEBUG devpinoyLogger:145 - Trying to set value :Stan for element : addfirstname_XPATH
-10:42:02,024 DEBUG devpinoyLogger:113 - Trying to find : addlastname_XPATH
-10:42:02,037 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_last_name']]
-10:42:02,037 DEBUG devpinoyLogger:145 - Trying to set value :Sttan for element : addlastname_XPATH
-10:42:02,082 DEBUG devpinoyLogger:113 - Trying to find : addaddress1_XPATH
-10:42:02,096 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_street_address']]
-10:42:02,096 DEBUG devpinoyLogger:145 - Trying to set value :Street 1 for element : addaddress1_XPATH
-10:42:02,152 DEBUG devpinoyLogger:113 - Trying to find : addaddress2_XPATH
-10:42:02,165 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_secondary_address']]
-10:42:02,165 DEBUG devpinoyLogger:145 - Trying to set value :23 for element : addaddress2_XPATH
-10:42:02,200 DEBUG devpinoyLogger:113 - Trying to find : addcity_XPATH
-10:42:02,213 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_city']]
-10:42:02,213 DEBUG devpinoyLogger:145 - Trying to set value :NY for element : addcity_XPATH
-10:42:02,251 DEBUG devpinoyLogger:113 - Trying to find : addstate_XPATH
-10:42:02,264 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //select[@id='address_state']]
-10:42:02,264 DEBUG devpinoyLogger:174 - Setting value : District of Columbia in dropdown menu : addstate_XPATH
-10:42:02,331 DEBUG devpinoyLogger:113 - Trying to find : addcode_XPATH
-10:42:02,343 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_zip_code']]
-10:42:02,343 DEBUG devpinoyLogger:145 - Trying to set value :112334 for element : addcode_XPATH
-10:42:02,404 DEBUG devpinoyLogger:113 - Trying to find : usradioBtn_XPATH
-10:42:02,418 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_country_us']]
-10:42:02,418 DEBUG devpinoyLogger:136 - Trying to click on : usradioBtn_XPATH
-10:42:02,456 DEBUG devpinoyLogger:113 - Trying to find : calendar_XPATH
-10:42:02,476 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_birthday']]
-10:42:02,476 DEBUG devpinoyLogger:145 - Trying to set value :03/02/1980 for element : calendar_XPATH
-10:42:02,539 DEBUG devpinoyLogger:113 - Trying to find : color_XPATH
-10:42:02,551 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@type='color']]
-10:42:02,559 DEBUG devpinoyLogger:113 - Trying to find : addage_XPATH
-10:42:02,571 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_age']]
-10:42:02,571 DEBUG devpinoyLogger:145 - Trying to set value :39 for element : addage_XPATH
-10:42:02,606 DEBUG devpinoyLogger:113 - Trying to find : addwebsite_XPATH
-10:42:02,619 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_website']]
-10:42:02,619 DEBUG devpinoyLogger:145 - Trying to set value :http://test.com for element : addwebsite_XPATH
-10:42:02,712 DEBUG devpinoyLogger:113 - Trying to find : addphonenumber_XPATH
-10:42:02,724 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_phone']]
-10:42:02,724 DEBUG devpinoyLogger:145 - Trying to set value :2334556 for element : addphonenumber_XPATH
-10:42:02,771 DEBUG devpinoyLogger:113 - Trying to find : climbCheckBox_XPATH
-10:42:02,786 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_interest_climb']]
-10:42:02,786 DEBUG devpinoyLogger:136 - Trying to click on : climbCheckBox_XPATH
-10:42:02,821 DEBUG devpinoyLogger:113 - Trying to find : addnote_XPATH
-10:42:02,841 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //textarea[@id='address_note']]
-10:42:02,842 DEBUG devpinoyLogger:145 - Trying to set value :Some Note for element : addnote_XPATH
-10:42:02,899 DEBUG devpinoyLogger:113 - Trying to find : createAddress_XPATH
-10:42:02,912 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@value='Create Address']]
-10:42:02,913 DEBUG devpinoyLogger:136 - Trying to click on : createAddress_XPATH
-10:42:03,302 DEBUG devpinoyLogger:113 - Trying to find : backtolistLink_XPATH
-10:42:03,317 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //a[@data-test='list']]
-10:42:03,317 DEBUG devpinoyLogger:136 - Trying to click on : backtolistLink_XPATH
-10:42:03,359 DEBUG devpinoyLogger:113 - Trying to find : successLabel_XPATH
-10:42:03,372 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //div[@class='alert alert-notice']]
-10:42:03,387 DEBUG devpinoyLogger:153 - Label text : Address was successfully created.
-10:42:03,394 DEBUG devpinoyLogger:72 - Finishing test execution : addAddressTest
-10:42:03,395 DEBUG devpinoyLogger:16 - Starting test execution : addAddressTest
-10:42:03,395 DEBUG devpinoyLogger:113 - Trying to find : addresses_XPATH
-10:42:03,403 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //a[contains(text(),'Addresses')]]
-10:42:03,403 DEBUG devpinoyLogger:136 - Trying to click on : addresses_XPATH
-10:42:03,440 DEBUG devpinoyLogger:113 - Trying to find : addressesLabel_XPATH
-10:42:03,616 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //h2[contains(text(),'Addresses')]]
-10:42:03,616 DEBUG devpinoyLogger:161 - Element : addressesLabel_XPATH successfully found
-10:42:03,616 DEBUG devpinoyLogger:113 - Trying to find : addNewAddressLink_CSS
-10:42:03,625 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> css selector: a[data-test='create']]
-10:42:03,625 DEBUG devpinoyLogger:136 - Trying to click on : addNewAddressLink_CSS
-10:42:03,665 DEBUG devpinoyLogger:113 - Trying to find : addfirstname_XPATH
-10:42:03,842 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_first_name']]
-10:42:03,842 DEBUG devpinoyLogger:145 - Trying to set value :Stive for element : addfirstname_XPATH
-10:42:03,901 DEBUG devpinoyLogger:113 - Trying to find : addlastname_XPATH
-10:42:03,912 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_last_name']]
-10:42:03,912 DEBUG devpinoyLogger:145 - Trying to set value :Aur for element : addlastname_XPATH
-10:42:03,959 DEBUG devpinoyLogger:113 - Trying to find : addaddress1_XPATH
-10:42:03,970 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_street_address']]
-10:42:03,970 DEBUG devpinoyLogger:145 - Trying to set value :Stre for element : addaddress1_XPATH
-10:42:04,013 DEBUG devpinoyLogger:113 - Trying to find : addaddress2_XPATH
-10:42:04,024 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_secondary_address']]
-10:42:04,024 DEBUG devpinoyLogger:145 - Trying to set value :4 for element : addaddress2_XPATH
-10:42:04,056 DEBUG devpinoyLogger:113 - Trying to find : addcity_XPATH
-10:42:04,066 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_city']]
-10:42:04,066 DEBUG devpinoyLogger:145 - Trying to set value :London for element : addcity_XPATH
-10:42:04,113 DEBUG devpinoyLogger:113 - Trying to find : addstate_XPATH
-10:42:04,121 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //select[@id='address_state']]
-10:42:04,122 DEBUG devpinoyLogger:174 - Setting value : Alabama in dropdown menu : addstate_XPATH
-10:42:04,153 DEBUG devpinoyLogger:113 - Trying to find : addcode_XPATH
-10:42:04,162 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_zip_code']]
-10:42:04,162 DEBUG devpinoyLogger:145 - Trying to set value :2345 for element : addcode_XPATH
-10:42:04,202 DEBUG devpinoyLogger:113 - Trying to find : usradioBtn_XPATH
-10:42:04,212 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_country_us']]
-10:42:04,212 DEBUG devpinoyLogger:136 - Trying to click on : usradioBtn_XPATH
-10:42:04,264 DEBUG devpinoyLogger:113 - Trying to find : calendar_XPATH
-10:42:04,273 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_birthday']]
-10:42:04,274 DEBUG devpinoyLogger:145 - Trying to set value :06/02/1983 for element : calendar_XPATH
-10:42:04,346 DEBUG devpinoyLogger:113 - Trying to find : color_XPATH
-10:42:04,355 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@type='color']]
-10:42:04,362 DEBUG devpinoyLogger:113 - Trying to find : addage_XPATH
-10:42:04,370 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_age']]
-10:42:04,370 DEBUG devpinoyLogger:145 - Trying to set value :36 for element : addage_XPATH
-10:42:04,406 DEBUG devpinoyLogger:113 - Trying to find : addwebsite_XPATH
-10:42:04,416 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_website']]
-10:42:04,416 DEBUG devpinoyLogger:145 - Trying to set value :http://test1.com for element : addwebsite_XPATH
-10:42:04,495 DEBUG devpinoyLogger:113 - Trying to find : addphonenumber_XPATH
-10:42:04,503 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_phone']]
-10:42:04,503 DEBUG devpinoyLogger:145 - Trying to set value :45467358 for element : addphonenumber_XPATH
-10:42:04,553 DEBUG devpinoyLogger:113 - Trying to find : climbCheckBox_XPATH
-10:42:04,563 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_interest_climb']]
-10:42:04,563 DEBUG devpinoyLogger:136 - Trying to click on : climbCheckBox_XPATH
-10:42:04,598 DEBUG devpinoyLogger:113 - Trying to find : addnote_XPATH
-10:42:04,605 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //textarea[@id='address_note']]
-10:42:04,606 DEBUG devpinoyLogger:145 - Trying to set value :Some Note 2 for element : addnote_XPATH
-10:42:04,671 DEBUG devpinoyLogger:113 - Trying to find : createAddress_XPATH
-10:42:04,680 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@value='Create Address']]
-10:42:04,680 DEBUG devpinoyLogger:136 - Trying to click on : createAddress_XPATH
-10:42:05,059 DEBUG devpinoyLogger:113 - Trying to find : backtolistLink_XPATH
-10:42:05,070 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //a[@data-test='list']]
-10:42:05,070 DEBUG devpinoyLogger:136 - Trying to click on : backtolistLink_XPATH
-10:42:05,111 DEBUG devpinoyLogger:113 - Trying to find : successLabel_XPATH
-10:42:05,120 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //div[@class='alert alert-notice']]
-10:42:05,134 DEBUG devpinoyLogger:153 - Label text : Address was successfully created.
-10:42:05,141 DEBUG devpinoyLogger:72 - Finishing test execution : addAddressTest
-10:42:05,141 DEBUG devpinoyLogger:16 - Starting test execution : addAddressTest
-10:42:05,142 DEBUG devpinoyLogger:113 - Trying to find : addresses_XPATH
-10:42:05,152 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //a[contains(text(),'Addresses')]]
-10:42:05,153 DEBUG devpinoyLogger:136 - Trying to click on : addresses_XPATH
-10:42:05,191 DEBUG devpinoyLogger:113 - Trying to find : addressesLabel_XPATH
-10:42:05,367 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //h2[contains(text(),'Addresses')]]
-10:42:05,367 DEBUG devpinoyLogger:161 - Element : addressesLabel_XPATH successfully found
-10:42:05,368 DEBUG devpinoyLogger:113 - Trying to find : addNewAddressLink_CSS
-10:42:05,376 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> css selector: a[data-test='create']]
-10:42:05,376 DEBUG devpinoyLogger:136 - Trying to click on : addNewAddressLink_CSS
-10:42:05,415 DEBUG devpinoyLogger:113 - Trying to find : addfirstname_XPATH
-10:42:05,594 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_first_name']]
-10:42:05,594 DEBUG devpinoyLogger:145 - Trying to set value :Anna for element : addfirstname_XPATH
-10:42:05,642 DEBUG devpinoyLogger:113 - Trying to find : addlastname_XPATH
-10:42:05,651 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_last_name']]
-10:42:05,651 DEBUG devpinoyLogger:145 - Trying to set value :Ane for element : addlastname_XPATH
-10:42:05,689 DEBUG devpinoyLogger:113 - Trying to find : addaddress1_XPATH
-10:42:05,697 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_street_address']]
-10:42:05,697 DEBUG devpinoyLogger:145 - Trying to set value :gsg for element : addaddress1_XPATH
-10:42:05,734 DEBUG devpinoyLogger:113 - Trying to find : addaddress2_XPATH
-10:42:05,742 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_secondary_address']]
-10:42:05,742 DEBUG devpinoyLogger:145 - Trying to set value :1 for element : addaddress2_XPATH
-10:42:05,773 DEBUG devpinoyLogger:113 - Trying to find : addcity_XPATH
-10:42:05,782 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_city']]
-10:42:05,783 DEBUG devpinoyLogger:145 - Trying to set value :Paris for element : addcity_XPATH
-10:42:05,825 DEBUG devpinoyLogger:113 - Trying to find : addstate_XPATH
-10:42:05,834 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //select[@id='address_state']]
-10:42:05,834 DEBUG devpinoyLogger:174 - Setting value : Alaska in dropdown menu : addstate_XPATH
-10:42:05,892 DEBUG devpinoyLogger:113 - Trying to find : addcode_XPATH
-10:42:05,901 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_zip_code']]
-10:42:05,901 DEBUG devpinoyLogger:145 - Trying to set value :44667 for element : addcode_XPATH
-10:42:05,950 DEBUG devpinoyLogger:113 - Trying to find : canadaradioBtn_XPATH
-10:42:05,965 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_country_canada']]
-10:42:05,965 DEBUG devpinoyLogger:136 - Trying to click on : canadaradioBtn_XPATH
-10:42:06,006 DEBUG devpinoyLogger:113 - Trying to find : calendar_XPATH
-10:42:06,015 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_birthday']]
-10:42:06,015 DEBUG devpinoyLogger:145 - Trying to set value :06/01/1990 for element : calendar_XPATH
-10:42:06,070 DEBUG devpinoyLogger:113 - Trying to find : color_XPATH
-10:42:06,078 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@type='color']]
-10:42:06,084 DEBUG devpinoyLogger:113 - Trying to find : addage_XPATH
-10:42:06,093 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_age']]
-10:42:06,093 DEBUG devpinoyLogger:145 - Trying to set value :29 for element : addage_XPATH
-10:42:06,128 DEBUG devpinoyLogger:113 - Trying to find : addwebsite_XPATH
-10:42:06,136 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_website']]
-10:42:06,136 DEBUG devpinoyLogger:145 - Trying to set value :http://test3.com for element : addwebsite_XPATH
-10:42:06,214 DEBUG devpinoyLogger:113 - Trying to find : addphonenumber_XPATH
-10:42:06,222 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_phone']]
-10:42:06,222 DEBUG devpinoyLogger:145 - Trying to set value :4673453547 for element : addphonenumber_XPATH
-10:42:06,282 DEBUG devpinoyLogger:113 - Trying to find : danceCheckBox_XPATH
-10:42:06,293 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_interest_dance']]
-10:42:06,293 DEBUG devpinoyLogger:136 - Trying to click on : danceCheckBox_XPATH
-10:42:06,328 DEBUG devpinoyLogger:113 - Trying to find : addnote_XPATH
-10:42:06,336 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //textarea[@id='address_note']]
-10:42:06,336 DEBUG devpinoyLogger:145 - Trying to set value :Some Note 3 for element : addnote_XPATH
-10:42:06,393 DEBUG devpinoyLogger:113 - Trying to find : createAddress_XPATH
-10:42:06,403 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@value='Create Address']]
-10:42:06,403 DEBUG devpinoyLogger:136 - Trying to click on : createAddress_XPATH
-10:42:06,782 DEBUG devpinoyLogger:113 - Trying to find : backtolistLink_XPATH
-10:42:06,791 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //a[@data-test='list']]
-10:42:06,792 DEBUG devpinoyLogger:136 - Trying to click on : backtolistLink_XPATH
-10:42:06,840 DEBUG devpinoyLogger:113 - Trying to find : successLabel_XPATH
-10:42:06,849 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //div[@class='alert alert-notice']]
-10:42:06,861 DEBUG devpinoyLogger:153 - Label text : Address was successfully created.
-10:42:06,868 DEBUG devpinoyLogger:72 - Finishing test execution : addAddressTest
-10:42:06,869 DEBUG devpinoyLogger:16 - Starting test execution : addAddressTest
-10:42:06,869 DEBUG devpinoyLogger:113 - Trying to find : addresses_XPATH
-10:42:06,877 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //a[contains(text(),'Addresses')]]
-10:42:06,877 DEBUG devpinoyLogger:136 - Trying to click on : addresses_XPATH
-10:42:06,915 DEBUG devpinoyLogger:113 - Trying to find : addressesLabel_XPATH
-10:42:07,091 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //h2[contains(text(),'Addresses')]]
-10:42:07,092 DEBUG devpinoyLogger:161 - Element : addressesLabel_XPATH successfully found
-10:42:07,092 DEBUG devpinoyLogger:113 - Trying to find : addNewAddressLink_CSS
-10:42:07,101 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> css selector: a[data-test='create']]
-10:42:07,101 DEBUG devpinoyLogger:136 - Trying to click on : addNewAddressLink_CSS
-10:42:07,140 DEBUG devpinoyLogger:113 - Trying to find : addfirstname_XPATH
-10:42:07,317 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_first_name']]
-10:42:07,317 DEBUG devpinoyLogger:145 - Trying to set value :Kate for element : addfirstname_XPATH
-10:42:07,367 DEBUG devpinoyLogger:113 - Trying to find : addlastname_XPATH
-10:42:07,375 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_last_name']]
-10:42:07,376 DEBUG devpinoyLogger:145 - Trying to set value :Sttan for element : addlastname_XPATH
-10:42:07,420 DEBUG devpinoyLogger:113 - Trying to find : addaddress1_XPATH
-10:42:07,429 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_street_address']]
-10:42:07,429 DEBUG devpinoyLogger:145 - Trying to set value :Street 4 for element : addaddress1_XPATH
-10:42:07,482 DEBUG devpinoyLogger:113 - Trying to find : addaddress2_XPATH
-10:42:07,490 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_secondary_address']]
-10:42:07,490 DEBUG devpinoyLogger:145 - Trying to set value :23 for element : addaddress2_XPATH
-10:42:07,523 DEBUG devpinoyLogger:113 - Trying to find : addcity_XPATH
-10:42:07,531 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_city']]
-10:42:07,532 DEBUG devpinoyLogger:145 - Trying to set value :NY for element : addcity_XPATH
-10:42:07,568 DEBUG devpinoyLogger:113 - Trying to find : addstate_XPATH
-10:42:07,576 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //select[@id='address_state']]
-10:42:07,576 DEBUG devpinoyLogger:174 - Setting value : Maine in dropdown menu : addstate_XPATH
-10:42:07,635 DEBUG devpinoyLogger:113 - Trying to find : addcode_XPATH
-10:42:07,643 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_zip_code']]
-10:42:07,643 DEBUG devpinoyLogger:145 - Trying to set value :112334 for element : addcode_XPATH
-10:42:07,701 DEBUG devpinoyLogger:113 - Trying to find : usradioBtn_XPATH
-10:42:07,710 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_country_us']]
-10:42:07,710 DEBUG devpinoyLogger:136 - Trying to click on : usradioBtn_XPATH
-10:42:07,747 DEBUG devpinoyLogger:113 - Trying to find : calendar_XPATH
-10:42:07,755 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_birthday']]
-10:42:07,755 DEBUG devpinoyLogger:145 - Trying to set value :06/02/1980 for element : calendar_XPATH
-10:42:07,808 DEBUG devpinoyLogger:113 - Trying to find : color_XPATH
-10:42:07,817 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@type='color']]
-10:42:07,823 DEBUG devpinoyLogger:113 - Trying to find : addage_XPATH
-10:42:07,832 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_age']]
-10:42:07,832 DEBUG devpinoyLogger:145 - Trying to set value :39 for element : addage_XPATH
-10:42:07,865 DEBUG devpinoyLogger:113 - Trying to find : addwebsite_XPATH
-10:42:07,873 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_website']]
-10:42:07,873 DEBUG devpinoyLogger:145 - Trying to set value :http://test.com for element : addwebsite_XPATH
-10:42:07,959 DEBUG devpinoyLogger:113 - Trying to find : addphonenumber_XPATH
-10:42:07,967 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_phone']]
-10:42:07,968 DEBUG devpinoyLogger:145 - Trying to set value :2334556 for element : addphonenumber_XPATH
-10:42:08,015 DEBUG devpinoyLogger:113 - Trying to find : danceCheckBox_XPATH
-10:42:08,023 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_interest_dance']]
-10:42:08,023 DEBUG devpinoyLogger:136 - Trying to click on : danceCheckBox_XPATH
-10:42:08,059 DEBUG devpinoyLogger:113 - Trying to find : readCheckBox_XPATH
-10:42:08,071 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@id='address_interest_read']]
-10:42:08,071 DEBUG devpinoyLogger:136 - Trying to click on : readCheckBox_XPATH
-10:42:08,104 DEBUG devpinoyLogger:113 - Trying to find : addnote_XPATH
-10:42:08,114 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //textarea[@id='address_note']]
-10:42:08,114 DEBUG devpinoyLogger:145 - Trying to set value :Some Note 5 for element : addnote_XPATH
-10:42:08,169 DEBUG devpinoyLogger:113 - Trying to find : createAddress_XPATH
-10:42:08,178 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //input[@value='Create Address']]
-10:42:08,178 DEBUG devpinoyLogger:136 - Trying to click on : createAddress_XPATH
-10:42:08,548 DEBUG devpinoyLogger:113 - Trying to find : backtolistLink_XPATH
-10:42:08,558 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //a[@data-test='list']]
-10:42:08,558 DEBUG devpinoyLogger:136 - Trying to click on : backtolistLink_XPATH
-10:42:08,600 DEBUG devpinoyLogger:113 - Trying to find : successLabel_XPATH
-10:42:08,609 DEBUG devpinoyLogger:128 - Element found : [[ChromeDriver: chrome on MAC (bb04df79f58c223b04d10282e894c4ed)] -> xpath: //div[@class='alert alert-notice']]
-10:42:08,622 DEBUG devpinoyLogger:153 - Label text : Address was successfully created.
-10:42:08,630 DEBUG devpinoyLogger:72 - Finishing test execution : addAddressTest
+12:18:22,003 DEBUG devpinoyLogger:50 - Initialize webdriver started
+12:18:22,009 DEBUG devpinoyLogger:79 - Setting browser : chrome
+12:18:22,451 DEBUG Preferences:118 - Preference found chrome73=2.46 (valid until 2019-03-27 12:34:40)
+12:18:22,451  INFO WebDriverManager:546 - Using chromedriver 2.46 (since Google Chrome 73 is installed in your machine)
+12:18:22,461 DEBUG WebDriverManager:502 - Driver chromedriver 2.46 found in cache
+12:18:22,461  INFO WebDriverManager:1035 - Exporting webdriver.chrome.driver as /Users/user/.m2/repository/webdriver/chromedriver/mac64/2.46/chromedriver
+12:18:24,291 DEBUG devpinoyLogger:100 - Navigate to : http://a.testaddressbook.com/ application
+12:18:25,469 DEBUG devpinoyLogger:17 - Starting test execution : loginTest
+12:18:25,481 DEBUG devpinoyLogger:184 - Page Title : Address Book
+12:18:25,488 DEBUG devpinoyLogger:114 - Trying to find : loginBtn_XPATH
+12:18:25,504 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //a[@id='sign-in']]
+12:18:25,504 DEBUG devpinoyLogger:137 - Trying to click on : loginBtn_XPATH
+12:18:25,558 DEBUG devpinoyLogger:114 - Trying to find : signupBtn_CSS
+12:18:25,737 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> css selector: a[data-test='sign-up']]
+12:18:25,737 DEBUG devpinoyLogger:162 - Element : signupBtn_CSS successfully found
+12:18:25,738 DEBUG devpinoyLogger:114 - Trying to find : emailField_XPATH
+12:18:25,751 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='session_email']]
+12:18:25,751 DEBUG devpinoyLogger:146 - Trying to set value :test404@test.com for element : emailField_XPATH
+12:18:25,873 DEBUG devpinoyLogger:114 - Trying to find : passwordField_XPATH
+12:18:25,886 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@placeholder='Password']]
+12:18:25,886 DEBUG devpinoyLogger:146 - Trying to set value :test123 for element : passwordField_XPATH
+12:18:25,933 DEBUG devpinoyLogger:114 - Trying to find : signinBtn_XPATH
+12:18:25,945 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@value='Sign in']]
+12:18:25,945 DEBUG devpinoyLogger:137 - Trying to click on : signinBtn_XPATH
+12:18:26,387 DEBUG devpinoyLogger:114 - Trying to find : addresses_XPATH
+12:18:26,401 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //a[contains(text(),'Addresses')]]
+12:18:26,402 DEBUG devpinoyLogger:162 - Element : addresses_XPATH successfully found
+12:18:26,406 DEBUG devpinoyLogger:184 - Page Title : Address Book
+12:18:26,410 DEBUG devpinoyLogger:37 - Finishing test execution : loginTest
+12:18:26,938 DEBUG devpinoyLogger:21 - Starting test execution : addAddressTest
+12:18:26,938 DEBUG devpinoyLogger:114 - Trying to find : addresses_XPATH
+12:18:26,948 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //a[contains(text(),'Addresses')]]
+12:18:26,949 DEBUG devpinoyLogger:137 - Trying to click on : addresses_XPATH
+12:18:26,991 DEBUG devpinoyLogger:114 - Trying to find : addressesLabel_XPATH
+12:18:27,171 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //h2[contains(text(),'Addresses')]]
+12:18:27,171 DEBUG devpinoyLogger:162 - Element : addressesLabel_XPATH successfully found
+12:18:27,172 DEBUG devpinoyLogger:114 - Trying to find : addNewAddressLink_CSS
+12:18:27,184 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> css selector: a[data-test='create']]
+12:18:27,184 DEBUG devpinoyLogger:137 - Trying to click on : addNewAddressLink_CSS
+12:18:27,224 DEBUG devpinoyLogger:114 - Trying to find : addfirstname_XPATH
+12:18:27,434 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_first_name']]
+12:18:27,435 DEBUG devpinoyLogger:146 - Trying to set value :Stan for element : addfirstname_XPATH
+12:18:27,493 DEBUG devpinoyLogger:114 - Trying to find : addlastname_XPATH
+12:18:27,507 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_last_name']]
+12:18:27,507 DEBUG devpinoyLogger:146 - Trying to set value :Sttan for element : addlastname_XPATH
+12:18:27,556 DEBUG devpinoyLogger:114 - Trying to find : addaddress1_XPATH
+12:18:27,568 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_street_address']]
+12:18:27,569 DEBUG devpinoyLogger:146 - Trying to set value :Street 1 for element : addaddress1_XPATH
+12:18:27,634 DEBUG devpinoyLogger:114 - Trying to find : addaddress2_XPATH
+12:18:27,647 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_secondary_address']]
+12:18:27,647 DEBUG devpinoyLogger:146 - Trying to set value :23 for element : addaddress2_XPATH
+12:18:27,680 DEBUG devpinoyLogger:114 - Trying to find : addcity_XPATH
+12:18:27,693 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_city']]
+12:18:27,693 DEBUG devpinoyLogger:146 - Trying to set value :NY for element : addcity_XPATH
+12:18:27,730 DEBUG devpinoyLogger:114 - Trying to find : addstate_XPATH
+12:18:27,743 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //select[@id='address_state']]
+12:18:27,744 DEBUG devpinoyLogger:175 - Setting value : District of Columbia in dropdown menu : addstate_XPATH
+12:18:27,811 DEBUG devpinoyLogger:114 - Trying to find : addcode_XPATH
+12:18:27,825 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_zip_code']]
+12:18:27,825 DEBUG devpinoyLogger:146 - Trying to set value :112334 for element : addcode_XPATH
+12:18:27,878 DEBUG devpinoyLogger:114 - Trying to find : usradioBtn_XPATH
+12:18:27,891 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_country_us']]
+12:18:27,891 DEBUG devpinoyLogger:137 - Trying to click on : usradioBtn_XPATH
+12:18:27,929 DEBUG devpinoyLogger:114 - Trying to find : calendar_XPATH
+12:18:27,949 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_birthday']]
+12:18:27,949 DEBUG devpinoyLogger:146 - Trying to set value :03/02/1980 for element : calendar_XPATH
+12:18:28,011 DEBUG devpinoyLogger:114 - Trying to find : color_XPATH
+12:18:28,024 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@type='color']]
+12:18:28,031 DEBUG devpinoyLogger:114 - Trying to find : addage_XPATH
+12:18:28,043 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_age']]
+12:18:28,043 DEBUG devpinoyLogger:146 - Trying to set value :39 for element : addage_XPATH
+12:18:28,079 DEBUG devpinoyLogger:114 - Trying to find : addwebsite_XPATH
+12:18:28,093 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_website']]
+12:18:28,094 DEBUG devpinoyLogger:146 - Trying to set value :http://test.com for element : addwebsite_XPATH
+12:18:28,174 DEBUG devpinoyLogger:114 - Trying to find : addphonenumber_XPATH
+12:18:28,187 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_phone']]
+12:18:28,187 DEBUG devpinoyLogger:146 - Trying to set value :2334556 for element : addphonenumber_XPATH
+12:18:28,235 DEBUG devpinoyLogger:114 - Trying to find : climbCheckBox_XPATH
+12:18:28,247 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_interest_climb']]
+12:18:28,248 DEBUG devpinoyLogger:137 - Trying to click on : climbCheckBox_XPATH
+12:18:28,295 DEBUG devpinoyLogger:114 - Trying to find : addnote_XPATH
+12:18:28,309 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //textarea[@id='address_note']]
+12:18:28,309 DEBUG devpinoyLogger:146 - Trying to set value :Some Note for element : addnote_XPATH
+12:18:28,365 DEBUG devpinoyLogger:114 - Trying to find : createAddress_XPATH
+12:18:28,377 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@value='Create Address']]
+12:18:28,377 DEBUG devpinoyLogger:137 - Trying to click on : createAddress_XPATH
+12:18:28,765 DEBUG devpinoyLogger:114 - Trying to find : backtolistLink_XPATH
+12:18:28,782 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //a[@data-test='list']]
+12:18:28,782 DEBUG devpinoyLogger:137 - Trying to click on : backtolistLink_XPATH
+12:18:28,825 DEBUG devpinoyLogger:114 - Trying to find : successLabel_XPATH
+12:18:28,838 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //div[@class='alert alert-notice']]
+12:18:28,852 DEBUG devpinoyLogger:154 - Label text : Address was successfully created.
+12:18:28,859 DEBUG devpinoyLogger:77 - Finishing test execution : addAddressTest
+12:18:28,861 DEBUG devpinoyLogger:21 - Starting test execution : addAddressTest
+12:18:28,861 DEBUG devpinoyLogger:114 - Trying to find : addresses_XPATH
+12:18:28,870 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //a[contains(text(),'Addresses')]]
+12:18:28,870 DEBUG devpinoyLogger:137 - Trying to click on : addresses_XPATH
+12:18:28,911 DEBUG devpinoyLogger:114 - Trying to find : addressesLabel_XPATH
+12:18:29,087 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //h2[contains(text(),'Addresses')]]
+12:18:29,088 DEBUG devpinoyLogger:162 - Element : addressesLabel_XPATH successfully found
+12:18:29,088 DEBUG devpinoyLogger:114 - Trying to find : addNewAddressLink_CSS
+12:18:29,096 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> css selector: a[data-test='create']]
+12:18:29,097 DEBUG devpinoyLogger:137 - Trying to click on : addNewAddressLink_CSS
+12:18:29,140 DEBUG devpinoyLogger:114 - Trying to find : addfirstname_XPATH
+12:18:29,316 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_first_name']]
+12:18:29,316 DEBUG devpinoyLogger:146 - Trying to set value :Anna for element : addfirstname_XPATH
+12:18:29,368 DEBUG devpinoyLogger:114 - Trying to find : addlastname_XPATH
+12:18:29,377 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_last_name']]
+12:18:29,378 DEBUG devpinoyLogger:146 - Trying to set value :Ane for element : addlastname_XPATH
+12:18:29,417 DEBUG devpinoyLogger:114 - Trying to find : addaddress1_XPATH
+12:18:29,425 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_street_address']]
+12:18:29,425 DEBUG devpinoyLogger:146 - Trying to set value :gsg for element : addaddress1_XPATH
+12:18:29,463 DEBUG devpinoyLogger:114 - Trying to find : addaddress2_XPATH
+12:18:29,472 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_secondary_address']]
+12:18:29,472 DEBUG devpinoyLogger:146 - Trying to set value :1 for element : addaddress2_XPATH
+12:18:29,502 DEBUG devpinoyLogger:114 - Trying to find : addcity_XPATH
+12:18:29,510 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_city']]
+12:18:29,510 DEBUG devpinoyLogger:146 - Trying to set value :Paris for element : addcity_XPATH
+12:18:29,554 DEBUG devpinoyLogger:114 - Trying to find : addstate_XPATH
+12:18:29,563 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //select[@id='address_state']]
+12:18:29,563 DEBUG devpinoyLogger:175 - Setting value : Alaska in dropdown menu : addstate_XPATH
+12:18:29,623 DEBUG devpinoyLogger:114 - Trying to find : addcode_XPATH
+12:18:29,632 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_zip_code']]
+12:18:29,633 DEBUG devpinoyLogger:146 - Trying to set value :44667 for element : addcode_XPATH
+12:18:29,689 DEBUG devpinoyLogger:114 - Trying to find : canadaradioBtn_XPATH
+12:18:29,702 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_country_canada']]
+12:18:29,702 DEBUG devpinoyLogger:137 - Trying to click on : canadaradioBtn_XPATH
+12:18:29,753 DEBUG devpinoyLogger:114 - Trying to find : calendar_XPATH
+12:18:29,767 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_birthday']]
+12:18:29,767 DEBUG devpinoyLogger:146 - Trying to set value :06/01/1990 for element : calendar_XPATH
+12:18:29,827 DEBUG devpinoyLogger:114 - Trying to find : color_XPATH
+12:18:29,835 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@type='color']]
+12:18:29,841 DEBUG devpinoyLogger:114 - Trying to find : addage_XPATH
+12:18:29,850 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_age']]
+12:18:29,850 DEBUG devpinoyLogger:146 - Trying to set value :29 for element : addage_XPATH
+12:18:29,888 DEBUG devpinoyLogger:114 - Trying to find : addwebsite_XPATH
+12:18:29,896 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_website']]
+12:18:29,896 DEBUG devpinoyLogger:146 - Trying to set value :http://test3.com for element : addwebsite_XPATH
+12:18:29,974 DEBUG devpinoyLogger:114 - Trying to find : addphonenumber_XPATH
+12:18:29,983 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_phone']]
+12:18:29,983 DEBUG devpinoyLogger:146 - Trying to set value :4673453547 for element : addphonenumber_XPATH
+12:18:30,046 DEBUG devpinoyLogger:114 - Trying to find : danceCheckBox_XPATH
+12:18:30,059 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_interest_dance']]
+12:18:30,059 DEBUG devpinoyLogger:137 - Trying to click on : danceCheckBox_XPATH
+12:18:30,095 DEBUG devpinoyLogger:114 - Trying to find : addnote_XPATH
+12:18:30,103 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //textarea[@id='address_note']]
+12:18:30,104 DEBUG devpinoyLogger:146 - Trying to set value :Some Note 3 for element : addnote_XPATH
+12:18:30,163 DEBUG devpinoyLogger:114 - Trying to find : createAddress_XPATH
+12:18:30,171 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@value='Create Address']]
+12:18:30,171 DEBUG devpinoyLogger:137 - Trying to click on : createAddress_XPATH
+12:18:30,727 DEBUG devpinoyLogger:114 - Trying to find : backtolistLink_XPATH
+12:18:30,737 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //a[@data-test='list']]
+12:18:30,738 DEBUG devpinoyLogger:137 - Trying to click on : backtolistLink_XPATH
+12:18:30,779 DEBUG devpinoyLogger:114 - Trying to find : successLabel_XPATH
+12:18:30,792 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //div[@class='alert alert-notice']]
+12:18:30,804 DEBUG devpinoyLogger:154 - Label text : Address was successfully created.
+12:18:30,811 DEBUG devpinoyLogger:77 - Finishing test execution : addAddressTest
+12:18:30,812 DEBUG devpinoyLogger:21 - Starting test execution : addAddressTest
+12:18:30,812 DEBUG devpinoyLogger:114 - Trying to find : addresses_XPATH
+12:18:30,821 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //a[contains(text(),'Addresses')]]
+12:18:30,821 DEBUG devpinoyLogger:137 - Trying to click on : addresses_XPATH
+12:18:30,861 DEBUG devpinoyLogger:114 - Trying to find : addressesLabel_XPATH
+12:18:31,037 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //h2[contains(text(),'Addresses')]]
+12:18:31,038 DEBUG devpinoyLogger:162 - Element : addressesLabel_XPATH successfully found
+12:18:31,038 DEBUG devpinoyLogger:114 - Trying to find : addNewAddressLink_CSS
+12:18:31,047 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> css selector: a[data-test='create']]
+12:18:31,047 DEBUG devpinoyLogger:137 - Trying to click on : addNewAddressLink_CSS
+12:18:31,085 DEBUG devpinoyLogger:114 - Trying to find : addfirstname_XPATH
+12:18:31,268 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_first_name']]
+12:18:31,269 DEBUG devpinoyLogger:146 - Trying to set value :Kate for element : addfirstname_XPATH
+12:18:31,321 DEBUG devpinoyLogger:114 - Trying to find : addlastname_XPATH
+12:18:31,331 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_last_name']]
+12:18:31,332 DEBUG devpinoyLogger:146 - Trying to set value :Sttan for element : addlastname_XPATH
+12:18:31,377 DEBUG devpinoyLogger:114 - Trying to find : addaddress1_XPATH
+12:18:31,384 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_street_address']]
+12:18:31,385 DEBUG devpinoyLogger:146 - Trying to set value :Street 4 for element : addaddress1_XPATH
+12:18:31,439 DEBUG devpinoyLogger:114 - Trying to find : addaddress2_XPATH
+12:18:31,446 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_secondary_address']]
+12:18:31,447 DEBUG devpinoyLogger:146 - Trying to set value :23 for element : addaddress2_XPATH
+12:18:31,482 DEBUG devpinoyLogger:114 - Trying to find : addcity_XPATH
+12:18:31,491 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_city']]
+12:18:31,491 DEBUG devpinoyLogger:146 - Trying to set value :NY for element : addcity_XPATH
+12:18:31,528 DEBUG devpinoyLogger:114 - Trying to find : addstate_XPATH
+12:18:31,537 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //select[@id='address_state']]
+12:18:31,537 DEBUG devpinoyLogger:175 - Setting value : Maine in dropdown menu : addstate_XPATH
+12:18:31,594 DEBUG devpinoyLogger:114 - Trying to find : addcode_XPATH
+12:18:31,604 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_zip_code']]
+12:18:31,604 DEBUG devpinoyLogger:146 - Trying to set value :112334 for element : addcode_XPATH
+12:18:31,655 DEBUG devpinoyLogger:114 - Trying to find : usradioBtn_XPATH
+12:18:31,663 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_country_us']]
+12:18:31,664 DEBUG devpinoyLogger:137 - Trying to click on : usradioBtn_XPATH
+12:18:31,700 DEBUG devpinoyLogger:114 - Trying to find : calendar_XPATH
+12:18:31,709 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_birthday']]
+12:18:31,709 DEBUG devpinoyLogger:146 - Trying to set value :06/02/1980 for element : calendar_XPATH
+12:18:31,768 DEBUG devpinoyLogger:114 - Trying to find : color_XPATH
+12:18:31,778 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@type='color']]
+12:18:31,784 DEBUG devpinoyLogger:114 - Trying to find : addage_XPATH
+12:18:31,793 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_age']]
+12:18:31,793 DEBUG devpinoyLogger:146 - Trying to set value :39 for element : addage_XPATH
+12:18:31,828 DEBUG devpinoyLogger:114 - Trying to find : addwebsite_XPATH
+12:18:31,836 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_website']]
+12:18:31,836 DEBUG devpinoyLogger:146 - Trying to set value :http://test.com for element : addwebsite_XPATH
+12:18:31,910 DEBUG devpinoyLogger:114 - Trying to find : addphonenumber_XPATH
+12:18:31,921 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_phone']]
+12:18:31,922 DEBUG devpinoyLogger:146 - Trying to set value :2334556 for element : addphonenumber_XPATH
+12:18:31,974 DEBUG devpinoyLogger:114 - Trying to find : danceCheckBox_XPATH
+12:18:31,981 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_interest_dance']]
+12:18:31,982 DEBUG devpinoyLogger:137 - Trying to click on : danceCheckBox_XPATH
+12:18:32,017 DEBUG devpinoyLogger:114 - Trying to find : readCheckBox_XPATH
+12:18:32,029 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@id='address_interest_read']]
+12:18:32,029 DEBUG devpinoyLogger:137 - Trying to click on : readCheckBox_XPATH
+12:18:32,063 DEBUG devpinoyLogger:114 - Trying to find : addnote_XPATH
+12:18:32,072 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //textarea[@id='address_note']]
+12:18:32,072 DEBUG devpinoyLogger:146 - Trying to set value :Some Note 5 for element : addnote_XPATH
+12:18:32,128 DEBUG devpinoyLogger:114 - Trying to find : createAddress_XPATH
+12:18:32,136 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //input[@value='Create Address']]
+12:18:32,137 DEBUG devpinoyLogger:137 - Trying to click on : createAddress_XPATH
+12:18:32,523 DEBUG devpinoyLogger:114 - Trying to find : backtolistLink_XPATH
+12:18:32,532 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //a[@data-test='list']]
+12:18:32,532 DEBUG devpinoyLogger:137 - Trying to click on : backtolistLink_XPATH
+12:18:32,572 DEBUG devpinoyLogger:114 - Trying to find : successLabel_XPATH
+12:18:32,580 DEBUG devpinoyLogger:129 - Element found : [[ChromeDriver: chrome on MAC (2e5404789385ac4b280c547d421a2295)] -> xpath: //div[@class='alert alert-notice']]
+12:18:32,594 DEBUG devpinoyLogger:154 - Label text : Address was successfully created.
+12:18:32,601 DEBUG devpinoyLogger:77 - Finishing test execution : addAddressTest

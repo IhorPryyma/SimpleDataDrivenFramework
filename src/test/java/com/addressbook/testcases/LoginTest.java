@@ -35,6 +35,7 @@ public class LoginTest extends TestBase {
         softAssert.assertEquals(getPageTitle(), data.get("hometitle"), "Authorized home page title do not matched");
 
         log.debug("Finishing test execution : " + m.getName());
+//        softAssert.fail();
 
         softAssert.assertAll();
     }
