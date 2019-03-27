@@ -1,6 +1,10 @@
 package com.addressbook.base;
 
 import com.addressbook.utilites.ExcelReader;
+import com.addressbook.utilites.ExtentManager;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.*;
@@ -40,6 +44,9 @@ public class TestBase {
 
     public static ExcelReader excel = new ExcelReader(PROJDIR + EXCELFILE_PATH);
 
+    public ExtentReports rep = ExtentManager.getInstance();
+    public static ExtentTest test;
+
 
 
 
@@ -78,6 +85,7 @@ public class TestBase {
             config.setProperty("browser", browser);
             log.debug("Setting browser : " + browser);
 
+
             if(browser.equalsIgnoreCase("chrome")){
                 WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();
@@ -112,6 +120,8 @@ public class TestBase {
         WebElement element = null;
 
         log.debug("Trying to find : " + locator);
+        test.log(LogStatus.INFO, "Trying to find : " + locator);
+
         if(locator.endsWith("_CSS")){
             element = driver.findElement(By.cssSelector(objectrepo.getProperty(locator)));
         } else if(locator.endsWith("_XPATH")){
@@ -127,6 +137,7 @@ public class TestBase {
         }
 
         log.debug("Element found : " + element);
+        test.log(LogStatus.INFO, "Element found : " + element);
         return element;
     }
 
@@ -135,6 +146,7 @@ public class TestBase {
         WebElement element = findElementByLocator(locator);
 
         log.debug("Trying to click on : " + locator);
+        test.log(LogStatus.INFO, "Trying to click on : " + locator);
 
         element.click();
     }
@@ -144,6 +156,8 @@ public class TestBase {
         WebElement element = findElementByLocator(locator);
 
         log.debug("Trying to set value :" + value + " for element : " + locator);
+        test.log(LogStatus.INFO, "Trying to set value :" + value + " for element : " + locator);
+
 
         element.sendKeys(value);
     }
@@ -152,6 +166,8 @@ public class TestBase {
         WebElement element = findElementByLocator(locator);
 
         log.debug("Label text : " + element.getText());
+        test.log(LogStatus.INFO, "Label text : " + element.getText());
+
         return element.getText();
     }
 
@@ -160,9 +176,13 @@ public class TestBase {
         try{
             findElementByLocator(locator);
             log.debug("Element : " + locator + " successfully found");
+            test.log(LogStatus.INFO, "Element : " + locator + " successfully found");
+
             return true;
         } catch (NoSuchElementException exc){
             log.error("Element : " + locator + " not found");
+            test.log(LogStatus.ERROR, "Element : " + locator + " not found");
+
             exc.printStackTrace();
         }
         return false;
@@ -173,6 +193,8 @@ public class TestBase {
         WebElement dropdown = findElementByLocator(locator);
 
         log.debug("Setting value : " + value + " in dropdown menu : " + locator);
+        test.log(LogStatus.INFO, "Setting value : " + value + " in dropdown menu : " + locator);
+
 
         Select select = new Select(dropdown);
         select.selectByVisibleText(value);
@@ -182,15 +204,9 @@ public class TestBase {
 
     public String getPageTitle(){
         log.debug("Page Title : " + driver.getTitle());
+        test.log(LogStatus.INFO, "Page Title : " + driver.getTitle());
+
         return driver.getTitle();
-    }
-
-
-    public void selectDateByJS(String locator, String dateValue) {
-        WebElement element = findElementByLocator(locator);
-
-        JavascriptExecutor js = (JavascriptExecutor)driver;
-        js.executeScript("arguments[0].setAttribute('value', '" + dateValue + "');" , element);
     }
 
 

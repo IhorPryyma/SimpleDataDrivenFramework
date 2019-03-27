@@ -66,7 +66,7 @@ public class AddAddressTest extends TestBase {
 
         click("createAddress_XPATH");
 
-        click("backtolistLink_XPATH");
+//        click("backtolistLink_XPATH");
 
 
         // Validate successful adding

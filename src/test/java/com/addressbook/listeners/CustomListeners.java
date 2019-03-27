@@ -2,64 +2,80 @@ package com.addressbook.listeners;
 
 import com.addressbook.base.TestBase;
 import com.addressbook.utilites.TestUtil;
+import com.relevantcodes.extentreports.LogStatus;
 import org.testng.*;
 
 public class CustomListeners extends TestBase implements ITestListener, ISuiteListener {
 
-    @Override
     public void onStart(ISuite suite) {
 
     }
 
-    @Override
+
     public void onFinish(ISuite suite) {
 
     }
 
-    @Override
+
     public void onTestStart(ITestResult result) {
+
+        test = rep.startTest(result.getName());
+
         if(!TestUtil.isTestRunnable(result.getName(), excel)) {
             throw new SkipException("Skipping the test " + result.getName() + " as the Run Mode is NO");
         }
 
-        Reporter.log(result.getTestName() + " started");
+        Reporter.log(result.getName() + " started");
     }
 
-    @Override
+
     public void onTestSuccess(ITestResult result) {
-        Reporter.log(result.getTestName() + " passed");
+        Reporter.log(result.getName() + " passed");
+
+        test.log(LogStatus.PASS, result.getName() + " PASSED");
+        rep.endTest(test);
+        rep.flush();
     }
 
-    @Override
+
     public void onTestFailure(ITestResult result) {
         System.setProperty("org.uncommons.reportng.escape-output", "false");
         TestUtil.captureScreenshot();
 
-        Reporter.log(result.getTestName() + " failed !!!");
+        test.log(LogStatus.FAIL, result.getName() + " FAILED with exception : " + result.getThrowable());
+        test.log(LogStatus.FAIL, test.addScreenCapture(TestUtil.screenshotName));
+
+        Reporter.log(result.getName() + " failed !!!");
         Reporter.log("Click to see screenshot");
         Reporter.log("<a target=\"_blank\" href=\"" + TestUtil.SCREENSHOT_PATH + TestUtil.screenshotName + "\">Screenshot</a>");
         Reporter.log("<br>");
         Reporter.log("<br>");
         Reporter.log("<a target=\"_blank\" href=\"" + TestUtil.SCREENSHOT_PATH + TestUtil.screenshotName + "\"><img height=200 width=200 src=\"" + TestUtil.screenshotName + "\"></img></a>");
 
+        rep.endTest(test);
+        rep.flush();
     }
 
-    @Override
+
     public void onTestSkipped(ITestResult result) {
-        Reporter.log(result.getTestName() + " skipped !!!");
+        Reporter.log(result.getName() + " skipped !!!");
+
+        test.log(LogStatus.SKIP, result.getName() + " Skipped the test as the Run Mode is NO.");
+        rep.endTest(test);
+        rep.flush();
     }
 
-    @Override
+
     public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
 
     }
 
-    @Override
+
     public void onStart(ITestContext context) {
 
     }
 
-    @Override
+
     public void onFinish(ITestContext context) {
 
     }
